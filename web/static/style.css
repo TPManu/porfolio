@@ -1,0 +1,58 @@
+:root {
+    --bg: #F5F5F3;
+    --surface: #FCFCFB;
+
+    --black: #090909;
+    --graphite: #161616;
+
+    --text: #181818;
+    --text-muted: #737373;
+
+    --border: #E3E3E0;
+
+    --accent: #A9C7D8;
+    --accent-soft: #DCECF3;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+
+    font-family: "Manrope", sans-serif;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3 {
+    font-weight: 600;
+    letter-spacing: -0.04em;
+}
+
+.greeting-card {
+    margin: 4rem;
+    background-color: var(--surface);
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+}
+
+@keyframes fadeInOpacity {
+    0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
